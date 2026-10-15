@@ -1,0 +1,1466 @@
+/* =====================================================
+   DOLCE FIORE
+   CSS PRINCIPAL
+===================================================== */
+
+
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff8fb;
+    color: #4d3b45;
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   CABEÇALHO
+===================================================== */
+
+.topo {
+    width: 100%;
+    min-height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    padding: 18px 6%;
+
+    background: #ffffff;
+
+    border-bottom: 2px solid #f1d7e4;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 3px 15px rgba(100, 40, 70, 0.08);
+}
+
+
+/* LOGO */
+
+.logo {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    color: #8b3a62;
+
+    white-space: nowrap;
+}
+
+
+/* MENU */
+
+.menu {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.menu a {
+    color: #4d3b45;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #c74487;
+}
+
+
+/* PESQUISA */
+
+.pesquisa {
+    display: flex;
+
+    align-items: center;
+}
+
+.pesquisa input {
+    width: 180px;
+
+    padding: 10px 14px;
+
+    border: 1px solid #e4c4d3;
+
+    border-radius: 25px 0 0 25px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+.pesquisa input:focus {
+    border-color: #c74487;
+}
+
+.pesquisa button {
+    margin: 0;
+
+    padding: 10px 14px;
+
+    border: none;
+
+    border-radius: 0 25px 25px 0;
+
+    background: #8b3a62;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.pesquisa button:hover {
+    background: #6f2c4e;
+}
+
+
+/* =========================
+   BANNER PRINCIPAL
+========================= */
+
+.banner {
+    position: relative;
+
+    min-height: 600px;
+    width: 100%;
+
+    /* SUA IMAGEM */
+    background-image: url("WhatsApp Image 2026-09-12 at 08.20.20.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+/* Escurece levemente a imagem para o texto aparecer */
+.banner::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* Conteúdo fica na frente da imagem */
+.banner-conteudo {
+    position: relative;
+    z-index: 2;
+
+    color: white;
+    padding: 30px;
+}
+
+/* Subtítulo */
+.subtitulo {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Título */
+.banner h1 {
+    font-size: 55px;
+    line-height: 1.2;
+
+    text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Nome Dolce Fiore */
+.banner h1 span {
+    display: block;
+
+    font-size: 75px;
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+/* Descrição */
+.banner-conteudo > p:not(.subtitulo) {
+    font-size: 21px;
+    margin: 20px 0 30px;
+
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Botão */
+.botao-banner {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background: white;
+    color: #8b4565;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao-banner:hover {
+    transform: scale(1.05);
+}
+
+
+/* =====================================================
+   SOBRE
+===================================================== */
+
+.sobre {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 80px 25px;
+
+    text-align: center;
+}
+
+
+.sobre-conteudo {
+    max-width: 750px;
+
+    margin: auto;
+}
+
+
+.titulo-pequeno {
+    color: #c74487;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.sobre h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 38px;
+
+    color: #633653;
+
+    margin: 12px 0 20px;
+}
+
+
+.sobre p {
+    color: #6d5b64;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   TÍTULOS DAS SEÇÕES
+===================================================== */
+
+.titulo-secao {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+
+.titulo-secao span {
+    color: #c74487;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.titulo-secao h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 40px;
+
+    color: #633653;
+
+    margin: 10px 0;
+}
+
+
+.titulo-secao p {
+    color: #76636d;
+
+    font-size: 17px;
+}
+
+
+/* =====================================================
+   PRODUTOS
+===================================================== */
+
+.produtos {
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 80px 25px;
+}
+
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    width: 100%;
+}
+
+
+/* CARD */
+
+.produto-card {
+    width: 100%;
+
+    min-height: 540px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 7px 25px rgba(100, 40, 70, 0.12);
+
+    transition: 0.3s;
+}
+
+
+.produto-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 35px rgba(100, 40, 70, 0.18);
+}
+
+
+/* IMAGEM */
+
+.produto-card img {
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* INFORMAÇÕES */
+
+.produto-info {
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+    padding: 20px;
+}
+
+
+.produto-info h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+
+    color: #8b3a62;
+
+    text-align: center;
+
+    margin-bottom: 5px;
+}
+
+
+.preco {
+    color: #d23f83;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    margin-bottom: 12px;
+}
+
+
+.produto-info h4 {
+    color: #5e4c55;
+
+    font-size: 15px;
+
+    margin-bottom: 7px;
+}
+
+
+.produto-info ul {
+    padding-left: 20px;
+
+    margin-bottom: 20px;
+
+    color: #6d5b64;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* BOTÃO DO PRODUTO */
+
+.produto-info button {
+    width: 100%;
+
+    margin-top: auto;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #8b3a62;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.produto-info button:hover {
+    background: #6f2c4e;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   NOVIDADES
+===================================================== */
+
+.novidades {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 80px 25px;
+}
+
+
+.novidades-form {
+    max-width: 700px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.novidades-form input,
+.novidades-form textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #e3c3d2;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    background: white;
+}
+
+
+.novidades-form input:focus,
+.novidades-form textarea:focus {
+    border-color: #e06baf;
+
+    box-shadow: 0 0 0 3px rgba(199, 68, 135, 0.1);
+}
+
+
+.novidades-form textarea {
+    min-height: 130px;
+
+    resize: vertical;
+}
+
+
+.novidades-form button {
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #8b3a62;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.novidades-form button:hover {
+    background: #dd3390;
+}
+
+
+/* =====================================================
+   CATÁLOGO
+===================================================== */
+
+.catalogo {
+    max-width: 750px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background: #fff8fb;
+
+    border: 1px solid #efd2df;
+
+    border-radius: 18px;
+
+    box-shadow: 0 6px 20px rgba(100, 40, 70, 0.08);
+}
+
+
+.catalogo h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #633653;
+
+    margin-bottom: 20px;
+}
+
+
+.catalogo img {
+    width: 100%;
+
+    max-width: 700px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    margin-bottom: 20px;
+}
+
+
+.catalogo a {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: #8b3a62;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.catalogo a:hover {
+    background: #6f2c4e;
+}
+
+
+/* ÚLTIMAS NOVIDADES */
+
+.ultimas-novidades {
+    max-width: 700px;
+
+    margin: 50px auto 0;
+
+    text-align: center;
+}
+
+
+.ultimas-novidades h2 {
+    color: #e92b7a;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* =====================================================
+   NEWSLETTER
+===================================================== */
+
+.newsletter {
+    padding: 75px 20px;
+
+    text-align: center;
+
+    background: #f8dce9;
+}
+
+
+.newsletter h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 34px;
+
+    color: #633653;
+
+    margin-bottom: 10px;
+}
+
+
+.newsletter p {
+    color: #6d5b64;
+
+    margin-bottom: 25px;
+}
+
+
+.newsletter input {
+    width: 300px;
+
+    max-width: 60%;
+
+    padding: 13px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 8px 0 0 8px;
+}
+
+
+.newsletter button {
+    padding: 13px 20px;
+
+    border: none;
+
+    background: #8b3a62;
+
+    color: white;
+
+    border-radius: 0 8px 8px 0;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   CONTATO
+===================================================== */
+
+.contato {
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 80px 25px;
+
+    text-align: center;
+}
+
+
+.contato h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 40px;
+
+    color: #633653;
+
+    margin-bottom: 10px;
+}
+
+
+.contato p {
+    color: #6d5b64;
+
+    margin-bottom: 25px;
+}
+
+
+.contato-botoes {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.contato-botoes a {
+    min-width: 150px;
+
+    padding: 13px 25px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.contato-botoes a:hover {
+    transform: translateY(-3px);
+}
+
+
+.whatsapp {
+    background: #25D366;
+}
+
+
+.instagram {
+    background: #d62976;
+}
+
+
+/* =====================================================
+   BOTÃO FLUTUANTE DO CARRINHO
+===================================================== */
+
+#botao-carrinho {
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    z-index: 9999;
+
+    padding: 15px 22px;
+
+    background: #8b3a62;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 50px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s;
+}
+
+
+#botao-carrinho:hover {
+    background: #6f2c4e;
+
+    transform: translateY(-3px);
+}
+
+
+#quantidade-carrinho {
+    display: inline-block;
+
+    min-width: 24px;
+
+    background: white;
+
+    color: #8b3a62;
+
+    border-radius: 50%;
+
+    padding: 3px 7px;
+
+    margin-left: 5px;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   FUNDO ESCURO DO CARRINHO
+===================================================== */
+
+#overlay {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    z-index: 9998;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.3s;
+}
+
+
+#overlay.aberto {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/* =====================================================
+   CARRINHO
+===================================================== */
+
+#carrinho {
+    position: fixed;
+
+    top: 0;
+
+    right: -430px;
+
+    width: 420px;
+
+    max-width: 100%;
+
+    height: 100vh;
+
+    background: white;
+
+    z-index: 10000;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition: 0.35s ease;
+
+    box-shadow:
+        -5px 0 25px rgba(0, 0, 0, 0.3);
+}
+
+
+#carrinho.aberto {
+    right: 0;
+}
+
+
+/* =====================================================
+   TOPO DO CARRINHO
+===================================================== */
+
+.carrinho-topo {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 20px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+.carrinho-topo h2 {
+    margin: 0;
+
+    color: #8b3a62;
+
+    font-size: 24px;
+}
+
+
+.fechar-carrinho {
+    border: none;
+
+    background: transparent;
+
+    color: #633653;
+
+    font-size: 32px;
+
+    cursor: pointer;
+
+    padding: 0;
+}
+
+
+.fechar-carrinho:hover {
+    color: #c74487;
+}
+
+
+/* =====================================================
+   ITENS DO CARRINHO
+===================================================== */
+
+#itens-carrinho {
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding: 20px;
+}
+
+
+.item-carrinho {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+.item-carrinho img {
+    width: 70px;
+
+    height: 70px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+.item-info {
+    flex: 1;
+}
+
+
+.item-info h4 {
+    margin: 0 0 5px;
+
+    font-size: 16px;
+
+    color: #4d3b45;
+}
+
+
+.item-info p {
+    margin: 0 0 10px;
+
+    font-weight: bold;
+
+    color: #8b3a62;
+}
+
+
+/* =====================================================
+   CONTROLES DE QUANTIDADE
+===================================================== */
+
+.controles {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.controles button {
+    width: 30px;
+
+    height: 30px;
+
+    margin: 0;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #f1e6ec;
+
+    color: #633653;
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+
+.controles button:hover {
+    background: #e5cbd8;
+}
+
+
+.controles span {
+    min-width: 20px;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   BOTÃO REMOVER
+===================================================== */
+
+.remover {
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    padding: 5px;
+}
+
+
+/* =====================================================
+   CARRINHO VAZIO
+===================================================== */
+
+.carrinho-vazio {
+    text-align: center;
+
+    color: #777;
+
+    padding: 60px 10px;
+
+    font-size: 17px;
+}
+
+
+/* =====================================================
+   FINAL DO CARRINHO
+===================================================== */
+
+.carrinho-final {
+    padding: 20px;
+
+    border-top: 1px solid #dddddd;
+
+    background: white;
+}
+
+
+.total {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+
+#total-carrinho {
+    color: #8b3a62;
+
+    font-weight: bold;
+}
+
+
+.botao-finalizar {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #25D366;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.botao-finalizar:hover {
+    background: #1ebe5d;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   RODAPÉ
+===================================================== */
+
+.rodape {
+    padding: 45px 20px;
+
+    text-align: center;
+
+    background: #633653;
+
+    color: white;
+}
+
+
+.rodape h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 27px;
+
+    margin-bottom: 10px;
+}
+
+
+.rodape p {
+    margin: 6px;
+
+    color: #f5e9ef;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .topo {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* 
+   CELULAR
+*/
+
+@media (max-width: 650px) {
+
+    .topo {
+        padding: 15px;
+    }
+
+
+    .logo {
+        width: 100%;
+
+        text-align: center;
+
+        font-size: 28px;
+    }
+
+
+    .menu {
+        width: 100%;
+
+        flex-wrap: wrap;
+
+        gap: 12px;
+    }
+
+
+    .menu a {
+        font-size: 14px;
+    }
+
+
+    .pesquisa {
+        width: 100%;
+    }
+
+
+    .pesquisa input {
+        width: 100%;
+    }
+
+
+    .banner {
+        min-height: 420px;
+
+        padding: 50px 20px;
+    }
+
+
+    .banner h1 {
+        font-size: 42px;
+    }
+
+
+    .banner p {
+        font-size: 17px;
+    }
+
+
+    .cards {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+
+    .produto-card {
+        min-height: auto;
+    }
+
+
+    .produto-card img {
+        height: 250px;
+    }
+
+
+    .sobre h2,
+    .titulo-secao h2,
+    .contato h2 {
+        font-size: 32px;
+    }
+
+
+    .newsletter input {
+        width: 65%;
+
+        max-width: none;
+    }
+
+
+    .newsletter button {
+        width: 30%;
+    }
+
+
+    .contato-botoes {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .contato-botoes a {
+        width: 100%;
+
+        max-width: 300px;
+    }
+
+
+    #botao-carrinho {
+        right: 15px;
+
+        bottom: 15px;
+    }
+
+
+    #carrinho {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================
+   PROMOÇÃO - VERMELHO
+========================= */
+
+#promoção {
+    background: #fff5f5;
+}
+
+/* Título da promoção */
+#promoção .titulo-secao span {
+    color: #d62828;
+}
+
+#promoção .titulo-secao h2 {
+    color: #b91c1c;
+}
+
+#promoção .titulo-secao p {
+    color: #7f1d1d;
+}
+
+/* Cards */
+#promoção .promocao-card {
+    border: 2px solid #ef4444;
+}
+
+/* Selo PROMOÇÃO */
+#promoção .selo-promocao {
+    background: #dc2626;
+    color: white;
+}
+
+/* Preço antigo */
+#promoção .preco-antigo {
+    color: #991b1b;
+}
+
+/* Preço promocional */
+#promoção .preco strong {
+    color: #dc2626;
+}
+
+/* Botão */
+#promoção button {
+    background: #dc2626;
+    color: white;
+    border: none;
+}
+
+/* Efeito ao passar o mouse */
+#promoção button:hover {
+    background: #b91c1c;
+}
+
+
+/* =========================
+   MAPA DE LOCALIZAÇÃO
+========================= */
+
+.mapa-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mapa-container iframe {
+    display: block;
+    width: 100%;
+    height: 350px;
+    border: none;
+}
+
+/* BOTÃO COMO CHEGAR */
+
+.localizacao-botao {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.botao-localizacao {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #d96c9d;
+    color: white;
+    transition: 0.3s;
+}
+
+.botao-localizacao:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+

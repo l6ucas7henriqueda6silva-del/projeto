@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dolce Fiore | Doces Artesanais</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     CABEÇALHO
+========================= -->
+
+<header class="topo">
+
+    <div class="logo">
+        Dolce Fiore
+    </div>
+
+    <nav class="menu">
+
+        <a href="#inicio">Início</a>
+
+        <a href="#sobre">Sobre</a>
+
+        <a href="#produtos">Produtos</a>
+
+        <a href="#promoção">promoção</a>
+
+        <a href="#contato">Contato</a>
+
+        
+
+    </nav>
+
+    <div class="pesquisa">
+
+        <input
+            type="text"
+            id="pesquisa"
+            placeholder="Buscar produto..."
+        >
+
+        <button onclick="buscar()">
+            🔍
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     BANNER PRINCIPAL
+========================= -->
+
+<section id="inicio" class="banner">
+
+    <div class="banner-conteudo">
+
+        <p class="subtitulo">
+            🍰 Doces artesanais feitos com carinho
+        </p>
+
+        <h1>
+            Seja bem-vindo ao
+            <span>Dolce Fiore</span>
+        </h1>
+
+        <p>
+            A doçura e o cuidado em cada detalhe.
+        </p>
+
+        <a href="#produtos" class="botao-banner">
+            Conheça nossos doces 🍓
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SOBRE
+========================= -->
+
+<section id="sobre" class="sobre">
+
+    <div class="sobre-conteudo">
+
+        <span class="titulo-pequeno">
+            SOBRE NÓS
+        </span>
+
+        <h2>
+            Um toque de carinho em cada doce
+        </h2>
+
+        <p>
+            Na Dolce Fiore você encontra doces artesanais
+            preparados com qualidade, sabor e muito carinho.
+            Nossas sobremesas são feitas para deixar
+            momentos especiais ainda mais doces.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PRODUTOS
+========================= -->
+
+<section id="produtos" class="produtos">
+
+    <div class="titulo-secao">
+
+        <span>
+            NOSSO CARDÁPIO
+        </span>
+
+        <h2>
+            Nossos doces 🍰
+        </h2>
+
+        <p>
+            Escolha seu favorito e faça seu pedido.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <!-- TORTA NUTELLA -->
+
+        <div class="produto-card">
+
+            <img
+                src="WhatsApp Image 2026-07-14 at 09.31.39.jpeg"
+                alt="Torta Nutella"
+            >
+
+            <div class="produto-info">
+
+                <h3>
+                    Torta Nutella
+                </h3>
+
+                <p class="preco">
+                    R$ 10,00
+                </p>
+
+                <h4>
+                    Ingredientes
+                </h4>
+
+                <ul>
+
+                    <li>Brigadeiro branco</li>
+
+                    <li>Nutella</li>
+
+                    <li>Ganache</li>
+
+                    <li>Granulado de chocolate</li>
+
+                    <li>Camada de biscoito</li>
+
+                </ul>
+
+                <button
+                    onclick="adicionarAoCarrinho(
+                        'Torta Nutella',
+                        10.00,
+                        'WhatsApp Image 2026-07-14 at 09.31.39.jpeg'
+                    )"
+                >
+                    Adicionar ao carrinho 🛒
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CONE DE NUTELLA -->
+
+        <div class="produto-card">
+
+            <img
+                src="WhatsApp Image 2026-07-14 at 09.30.32.jpeg"
+                alt="Cone de Nutella"
+            >
+
+            <div class="produto-info">
+
+                <h3>
+                    Cone de Nutella
+                </h3>
+
+                <p class="preco">
+                    R$ 10,00
+                </p>
+
+                <h4>
+                    Ingredientes
+                </h4>
+
+                <ul>
+
+                    <li>Cone de sorvete</li>
+
+                    <li>Brigadeiro branco</li>
+
+                    <li>Creme de Nutella</li>
+
+                    <li>Chocolate nobre</li>
+
+                </ul>
+
+                <button
+                    onclick="adicionarAoCarrinho(
+                        'Cone de Nutella',
+                        10.00,
+                        'WhatsApp Image 2026-07-14 at 09.30.32.jpeg'
+                    )"
+                >
+                    Adicionar ao carrinho 🛒
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- TORTA MORANGO -->
+
+        <div class="produto-card">
+
+            <img
+                src="WhatsApp Image 2026-07-14 at 09.31.39 (1).jpeg"
+                alt="Torta de Morango"
+            >
+
+            <div class="produto-info">
+
+                <h3>
+                    Torta Morango
+                </h3>
+
+                <p class="preco">
+                    R$ 10,00
+                </p>
+
+                <h4>
+                    Ingredientes
+                </h4>
+
+                <ul>
+
+                    <li>Brigadeiro branco</li>
+
+                    <li>Morango</li>
+
+                    <li>Ganache</li>
+
+                    <li>Granulado de chocolate</li>
+
+                    <li>Camada de biscoito</li>
+
+                </ul>
+
+                <button
+                    onclick="adicionarAoCarrinho(
+                        'Torta Morango',
+                        10.00,
+                        'WhatsApp Image 2026-07-14 at 09.31.39 (1).jpeg'
+                    )"
+                >
+                    Adicionar ao carrinho 🛒
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- TORTA MARACUJÁ -->
+
+        <div class="produto-card">
+
+            <img
+                src="torta.jpeg"
+                alt="Torta de Maracujá"
+            >
+
+            <div class="produto-info">
+
+                <h3>
+                    Torta Maracujá
+                </h3>
+
+                <p class="preco">
+                    R$ 10,00
+                </p>
+
+                <h4>
+                    Ingredientes
+                </h4>
+
+                <ul>
+
+                    <li>Brigadeiro branco</li>
+
+                    <li>Maracujá</li>
+
+                    <li>Ganache</li>
+
+                    <li>Granulado de chocolate</li>
+
+                    <li>Camada de biscoito</li>
+
+                </ul>
+
+                <button
+                    onclick="adicionarAoCarrinho(
+                        'Torta de Maracujá',
+                        10.00,
+                        'torta de maracuja.jpeg'
+                    )"
+                >
+                    Adicionar ao carrinho 🛒
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- TORTA LIMÃo -->
+
+        <div class="produto-card">
+
+            <img
+                src="torta de limao.jpeg"
+                alt="torta de limão"
+            >
+
+            <div class="produto-info">
+
+                <h3>
+                    Torta de limão
+                </h3>
+
+                <p class="preco">
+                    R$ 8,00
+                </p>
+
+                <h4>
+                    Ingredientes
+                </h4>
+
+                <ul>
+
+                    <li>mousse de limão</li>
+
+                    <li>biscoito</li>
+
+                    <li>chantininho</li>
+
+
+                </ul>
+
+                <button
+                    onclick="adicionarAoCarrinho(
+                        'torta de limão',
+                        8.00,
+                        'torta de limao.jpeg'
+                    )"
+                >
+                    Adicionar ao carrinho 🛒
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Cone De Prestigio -->
+
+        <div class="produto-card">
+
+            <img
+                src="cone de prestigio.jpeg"
+                alt="Cone de Prestigio"
+            >
+
+            <div class="produto-info">
+
+                <h3>
+                    cone de prestigio
+                </h3>
+
+                <p class="preco">
+                    R$ 12,00
+                </p>
+
+                <h4>
+                    Ingredientes
+                </h4>
+
+                <ul>
+
+                    <li>casquinha de sorvete</li>
+
+                    <li>brigadeiro de coco</li>
+
+                    <li>chocolate nobre</li>
+
+
+                </ul>
+
+                <button
+                    onclick="adicionarAoCarrinho(
+                        'cone de prestigio',
+                        12.00,
+                        'cone.jpeg'
+                    )"
+                >
+                    Adicionar ao carrinho 🛒
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Bolo De Cenoura -->
+
+        <div class="produto-card">
+
+            <img
+                src="bolo de cenoura.webp"
+                alt="Bolo De Cenoura"
+            >
+
+            <div class="produto-info">
+
+                <h3>
+                    bolo de cenoura
+                </h3>
+
+                <p class="preco">
+                    R$ 20,00
+                </p>
+
+                <h4>
+                    Ingredientes
+                </h4>
+
+                <ul>
+
+                    <li> Bolo de cenoura</li>
+
+                    <li>cobertura de Brigadeiro </li>
+
+
+                </ul>
+
+                <button
+                    onclick="adicionarAoCarrinho(
+                        'Bolo de cenoura',
+                        20.00,
+                        'Bolo de cenoura.jpeg'
+                    )"
+                >
+                    Adicionar ao carrinho 🛒
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- COOKIE -->
+
+        <div class="produto-card">
+
+            <img
+                src="cookies.jpeg"
+                alt="Cookie"
+            >
+
+            <div class="produto-info">
+
+                <h3>
+                    Cookie
+                </h3>
+
+                <p class="preco">
+                    R$ 8,00
+                </p>
+
+                <h4>
+                    Ingredientes
+                </h4>
+
+                <ul>
+
+                    <li>Cookie tradicional</li>
+
+                    <li>Gotas de chocolate nobre</li>
+
+                </ul>
+
+                <button
+                    onclick="adicionarAoCarrinho(
+                        'Cookie',
+                        8.00,
+                        'cookies.jpeg'
+                    )"
+                >
+                    Adicionar ao carrinho 🛒
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- COPO DE MORANGO -->
+
+        <div class="produto-card">
+
+            <img
+                src="morango.jpeg"
+                alt="Copo de Morango"
+            >
+
+            <div class="produto-info">
+
+                <h3>
+                    Copo de Morango
+                </h3>
+
+                <p class="preco">
+                    R$ 15,00
+                </p>
+
+                <h4>
+                    Ingredientes
+                </h4>
+
+                <ul>
+
+                    <li>Brigadeiro branco</li>
+
+                    <li>Geleia de morango</li>
+
+                    <li>Pedaços de morango</li>
+
+                    <li>Pedaços de biscoito</li>
+
+                </ul>
+
+                <button
+                    onclick="adicionarAoCarrinho(
+                        'Copo de Morango',
+                        15.00,
+                        'copo de morango.jpeg'
+                    )"
+                >
+                    Adicionar ao carrinho 🛒
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     NOVIDADES / PROMOÇÃO
+========================= -->
+
+<section id="promoção" class="promoção">
+
+    <div class="titulo-secao">
+
+        <span>
+            promoção
+        </span>
+
+        <h2>
+            Promoção da Semana 🍓
+        </h2>
+
+        <p>
+            Aproveite nossas ofertas especiais! 💕
+        </p>
+
+    </div>
+
+
+    <!-- PRODUTOS EM PROMOÇÃO -->
+
+    <div class="cards promocao-cards">
+
+
+        <!-- BOLO DE CENOURA -->
+
+        <div class="produto-card promocao-card">
+
+            <div class="selo-promocao">
+                🔥 PROMOÇÃO
+            </div>
+
+            <img
+                src="bolo de cenoura.webp"
+                alt="Bolo de Cenoura"
+            >
+
+            <div class="produto-info">
+
+                <h3>
+                    Bolo de Cenoura 🍰
+                </h3>
+
+                <p>
+                    Delicioso bolo de cenoura com cobertura de brigadeiro.
+                </p>
+
+                <p class="preco">
+                    <span class="preco-antigo">
+                        R$ 25,00 por
+                    </span>
+
+                    <strong>
+                        R$ 20,00
+                    </strong>
+                </p>
+
+                <button
+                    onclick="adicionarAoCarrinho(
+                        'Bolo de cenoura',
+                        20.00,
+                        'bolo de cenoura.webp'
+                    )"
+                >
+                    Adicionar ao carrinho 🛒
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- TORTA DE LIMÃO -->
+
+        <div class="produto-card promocao-card">
+
+            <div class="selo-promocao">
+                🔥 PROMOÇÃO
+            </div>
+
+            <img
+                src="torta de limao.jpeg"
+                alt="Torta de Limão"
+            >
+
+            <div class="produto-info">
+
+                <h3>
+                    Torta de Limão 🍋
+                </h3>
+
+                <p>
+                    Torta cremosa de limão com chantininho e biscoito.
+                </p>
+
+                <p class="preco">
+                    <span class="preco-antigo">
+                        R$ 10,00 por
+                    </span>
+
+                    <strong>
+                        R$ 8,00
+                    </strong>
+                </p>
+
+                <button
+                    onclick="adicionarAoCarrinho(
+                        'Torta de limão',
+                        8.00,
+                        'torta de limao.jpeg'
+                    )"
+                >
+                    Adicionar ao carrinho 🛒
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- TORTA NUTELLA -->
+
+        <div class="produto-card promocao-card">
+
+            <div class="selo-promocao">
+                🔥 PROMOÇÃO
+            </div>
+
+            <img
+                src="WhatsApp Image 2026-07-14 at 09.31.39.jpeg"
+                alt="Torta Nutella"
+            >
+
+            <div class="produto-info">
+
+                <h3>
+                    Torta Nutella 🍫
+                </h3>
+
+                <p>
+                    Torta com brigadeiro branco, Nutella e ganache.
+                </p>
+
+                <p class="preco">
+                    <span class="preco-antigo">
+                        R$ 12,00 por
+                    </span>
+
+                    <strong>
+                        R$ 10,00
+                    </strong>
+                </p>
+
+                <button
+                    onclick="adicionarAoCarrinho(
+                        'Torta Nutella',
+                        10.00,
+                        'WhatsApp Image 2026-07-14 at 09.31.39.jpeg'
+                    )"
+                >
+                    Adicionar ao carrinho 🛒
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     NEWSLETTER
+========================= -->
+
+<section class="newsletter">
+
+    <h2>
+        Receba nossas novidades 💌
+    </h2>
+
+    <p>
+        Cadastre seu e-mail para acompanhar as novidades da Dolce Fiore.
+    </p>
+
+    <div>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Digite seu e-mail"
+        >
+
+        <button onclick="cadastrarEmail()">
+            Enviar
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTATO
+========================= -->
+
+<section id="contato" class="contato">
+
+    <h2>
+        Faça sua encomenda 💕
+    </h2>
+
+    <p>
+        Entre em contato conosco ou venha nos visitar!
+    </p>
+
+    <!-- MAPA DE LOCALIZAÇÃO -->
+    <div class="mapa-container">
+
+        <iframe
+            src="https://www.google.com/maps?q=Rua+Padre+Pedro+Pinto,+1500,+Venda+Nova,+Belo+Horizonte+-+MG&output=embed"
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    </div>
+
+    <!-- BOTÃO COMO CHEGAR -->
+    <div class="localizacao-botao">
+
+        <a
+            href="https://www.google.com/maps/search/?api=1&query=Rua+Padre+Pedro+Pinto,+1500,+Venda+Nova,+Belo+Horizonte+-+MG"
+            target="_blank"
+            class="botao-localizacao">
+            📍 Como chegar
+        </a>
+
+    </div>
+
+    <!-- BOTÕES DE CONTATO -->
+    <div class="contato-botoes">
+
+        <a
+            href="https://wa.me/5531984051113"
+            target="_blank"
+            class="whatsapp">
+            WhatsApp 💬
+        </a>
+
+        <a
+            href="https://www.instagram.com/dolce._fiore._?stkn=MXRuN2RybG5lejB6bw=="
+            target="_blank"
+            class="instagram">
+            Instagram 📸
+        </a>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     CARRINHO
+========================= -->
+
+<button
+    id="botao-carrinho"
+    class="botao-carrinho"
+    onclick="abrirCarrinho()"
+>
+
+    🛒 Carrinho
+
+    <span id="quantidade-carrinho">
+        0
+    </span>
+
+</button>
+
+
+<div
+    id="overlay"
+    class="overlay"
+    onclick="fecharCarrinho()"
+></div>
+
+
+<aside
+    id="carrinho"
+    class="carrinho"
+>
+
+    <div class="carrinho-topo">
+
+        <h2>
+            🛒 Meu Carrinho
+        </h2>
+
+        <button
+            onclick="fecharCarrinho()"
+            class="fechar-carrinho"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+    <div
+        id="itens-carrinho"
+        class="itens-carrinho"
+    ></div>
+
+
+    <div class="carrinho-final">
+
+        <div class="total">
+
+            <span>
+                Total:
+            </span>
+
+            <strong id="total-carrinho">
+                R$ 0,00
+            </strong>
+
+        </div>
+
+
+        <button
+            class="botao-finalizar"
+            onclick="finalizarCompra()"
+        >
+            Finalizar pedido pelo WhatsApp 📱
+        </button>
+
+    </div>
+
+</aside>
+
+<!-- =========================
+     RODAPÉ
+========================= -->
+
+<footer class="rodape">
+
+    <h3>
+        Dolce Fiore 🍰
+    </h3>
+
+    <p>
+        Doces artesanais feitos com carinho.
+    </p>
+
+    <p> Horario de Funcionamento:
+        aberto de 8:00 ás 18:00 
+
+    </p>©️ 2026 - Dolce Fiore <p></p>
+
+</footer>
+
+
+
+<script>
+
+function mostrarCatalogo() {
+
+    document.getElementById("catalogo").style.display = "block";
+
+}
+
+</script>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+  
+
+
+
+        
+
+
+
+
+
+
+
+       
+
+
+
+   
+
+
+
+
+
+

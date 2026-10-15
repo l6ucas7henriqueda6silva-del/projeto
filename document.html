@@ -1,0 +1,24 @@
+unction adicionarPost(){
+
+    let titulo = document.getElementById("titulo").value;
+    let texto = document.getElementById("texto").value;
+
+    if(titulo === "" || texto === ""){
+        alert("Preencha todos os campos.");
+        return;
+    }
+
+    let post = document.createElement("div");
+    post.className = "post";
+
+    post.innerHTML = `
+        <h3>${titulo}</h3>
+        <p>${texto}</p>
+        <button onclick="this.parentElement.remove()">Excluir</button>
+    `;
+
+    document.getElementById("postagens").appendChild(post);
+
+    document.getElementById("titulo").value = "";
+    document.getElementById("texto").value = "";
+}
